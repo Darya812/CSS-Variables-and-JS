@@ -1,0 +1,60 @@
+:root {
+  --base: #9dff00;
+  --spacing: 20px;
+  --blur: 10px;
+  --saturate: 0%;
+  --bgColor: #193549;
+  --size: 250px;
+  
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur)) saturate(var(--saturate));
+  width: var(--size);
+  height: var(--size);
+}
+
+.hl {
+  color: var(--base);
+}
+
+h2 {
+  text-align: center;
+}
+
+body {
+  
+  display: flex;
+  flex-direction: column;
+  font-family: "Nerko One", cursive;
+  background-color: var(--bgColor);
+  color: rgba(255, 248, 248, 0.829);
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.picture {
+  text-align: end;
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-size: 30px;
+  color: rgb(180, 244, 255);
+  margin-left: var(--spacing);
+}
+
+input {
+  width: 100px;
+  margin: var(--spacing);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+    <div class="content">
+      <div class="filter">
+        <label
+          >Background Color:
+          <input type="color" name="bgColor" value="#193549" />
+        </label>
+        <label
+          >Size Picture:
+          <input
+            type="range"
+            name="size"
+            min="200"
+            max="600"
+            value="250"
+            data-sizing="px"
+          />
+        </label>
+        <label
+          >Blur:
+          <input
+            type="range"
+            name="blur"
+            min="0"
+            max="8"
+            value="0"
+            data-sizing="px"
+          />
+        </label>
+        <label
+          >Saturate:
+          <input
+            type="range"
+            name="saturate"
+            min="0"
+            max="100"
+            value="0"
+            data-sizing="%"
+          />
+        </label>
+      </div>
+      <div class="picture">
+        <img
+          src="https://gordonua.com/img/article/15056/98_tn.jpg"
+          alt="no-comments"
+        />
+      </div>
+    </div>
+    <script src="action.js"></script>
+  </body>
+</html>
